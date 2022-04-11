@@ -245,7 +245,7 @@ module.exports = {
           if (!('viewonce' in chat)) chat.viewonce = true
         } else global.db.data.chats[m.chat] = {
           isBanned: false,
-          welcome: false,
+          welcome: true,
           detect: false,
           sWelcome: '',
           sBye: '',
@@ -253,9 +253,9 @@ module.exports = {
           sDemote: '',
           descUpdate: true,
           delete: true,
-          stiker: false,
+          stiker: true,
           rpg: true,
-          nsfw: false,
+          nsfw: true,
           antiBadword: true,
           antiLink: false,
           viewonce: true,
@@ -279,10 +279,10 @@ module.exports = {
           anticall: true,
           antispam: true,
           antitroli: true,
-          backup: false,
+          backup: true,
           backupDB: 0,
           groupOnly: false,
-          jadibot: false,
+          jadibot: true,
           onsfw: true,
           status: 0,
         }
@@ -662,9 +662,9 @@ global.dfail = (type, m, conn) => {
   }[type]
   if (botAdmin) return conn.sendButton(m.chat, botAdmin, 'lupa saya', 'Eh iya ya', 'Nanii', m)
   let unreg = {
-    unreg: `Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar AlyaaXzy.16*`
+    unreg: `Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Senja thre anita.16*`
   }[type]
-  if (unreg) return conn.sendButton(m.chat, `Halo kak ${name} Sebelum menggunakan fitur ini Harap Verify Terlebih dahulu`, watermark, 'Verify', `#daftar ${name}.17`, { key: { fromMe: false, remoteJid: 'status@broadcast', participant: '0@s.whatsapp.net' }, message: { orderMessage: { message: `© AlyaaXzy_\nJam ${time}`, itemCount: 2022, thumbnail: fs.readFileSync('./src/RadBotZ.jpg')}}})
+  if (unreg) return conn.sendButton(m.chat, `Halo kak ${name} Sebelum menggunakan fitur ini Harap Verify Terlebih dahulu`, watermark, 'Verify', `#daftar ${name}.17`, { key: { fromMe: false, remoteJid: 'status@broadcast', participant: '0@s.whatsapp.net' }, message: { orderMessage: { message: `© Leviathan_\nJam ${time}`, itemCount: 2022, thumbnail: fs.readFileSync('./src/RadBotZ.jpg')}}})
 }
 
 let chalk = require('chalk')
