@@ -3,7 +3,7 @@ let handler = async(m, { conn, args, text, usedPrefix: _p }) => {
  const ftoko = {
 key: {
 			fromMe: false,
-			participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "0@s.whatsapp.net" } : {})
+			participant: `6282311619167@s.whatsapp.net`, ...(m.chat ? { remoteJid: "6282311619167@s.whatsapp.net" } : {})
 		},
 		message: {
 			"productMessage": {
@@ -12,31 +12,31 @@ key: {
 						"mimetype": "image/jpeg",
 						"jpegThumbnail": fs.readFileSync('./src/AlyaaXzy.jpg') //Gambarnye
 					},
-					"title": "AlyaaXzy", //Kasih namalu 
+					"title": "Leviathan", //Kasih namalu 
 					"description": "SELF BOT", 
 					"currencyCode": "USD",
 					"priceAmount1000": "2000",
 					"retailerId": "Ghost",
 					"productImageCount": 1
 				},
-				    "businessOwnerJid": `0@s.whatsapp.net`
+				    "businessOwnerJid": `6282311619167@s.whatsapp.net`
 		}
 	}
 }
 //FAKEREPLY TROLI
 const ftroli = {
 	key : {
-                          participant : '0@s.whatsapp.net'
+                          participant : '6282311619167@s.whatsapp.net'
                         },
        message: {
                     orderMessage: {
                             itemCount : 1,
                             status: 1,
                             surface : 1,
-                            message: 'AlyaaXzy', //Kasih namalu
+                            message: 'Dmr botz', //Kasih namalu
                             orderTitle: 'Bang',
                             thumbnail: fs.readFileSync('./src/AlyaaXzy.jpg'), //Gambarnye
-                            sellerJid: '0@s.whatsapp.net'
+                            sellerJid: '6282311619167@s.whatsapp.net'
           
                           }
                         }
@@ -44,7 +44,7 @@ const ftroli = {
 //FAKEREPLY LOCATION
 const flokasi = {
 	key : {
-           participant : '0@s.whatsapp.net'
+           participant : '6282311619167@s.whatsapp.net'
                         },
        message: {
                     locationMessage: {
@@ -57,7 +57,7 @@ const flokasi = {
 const floc = {
 	 key:
 	 { fromMe: false,
-	 participant: `0@s.whatsapp.net`, ...(m.chat ? 
+	 participant: `6282311619167@s.whatsapp.net`, ...(m.chat ? 
 	 { remoteJid: "status@broadcast" } : {}) },
 	 message: { "locationMessage": { "title":"jakarta","h": `aloo`, 'jpegThumbnail': fs.readFileSync('./src/AlyaaXzy.jpg')}}
 	}
@@ -65,14 +65,14 @@ const floc = {
 const fliveLoc = {
 	 key:
 	 { fromMe: false,
-	 participant: `0@s.whatsapp.net`, ...(m.chat  ? 
+	 participant: `6282311619167@s.whatsapp.net`, ...(m.chat  ? 
 	 { remoteJid: "status@broadcast" } : {}) },
 	 message: { "liveLocationMessage": { "caption":"ANTIBOT","h": `aloo`, 'jpegThumbnail': fs.readFileSync('./src/AlyaaXzy.jpg')}}
 	}
 	const fliveLoc2 = {
 	 key:
 	 { fromMe: false,
-	 participant: `0@s.whatsapp.net`, ...(m.chat ? 
+	 participant: `6282311619167@s.whatsapp.net`, ...(m.chat ? 
 	 { remoteJid: "status@broadcast" } : {}) },
 	 message: { "liveLocationMessage": { "title": "ANTIBOT","h": `aloo`, 'jpegThumbnail': fs.readFileSync('./src/AlyaaXzy.jpg')}}
 	}
@@ -80,7 +80,7 @@ const fliveLoc = {
  const fcon = {
 	 key:
 	 { fromMe: false,
-	 participant: `0@s.whatsapp.net`, ...(m.chat ? 
+	 participant: `6282311619167@s.whatsapp.net`, ...(m.chat ? 
 	 { remoteJid: "status@broadcast" } : {}) },
 	 message: { "contactMessage": { "title":"sri","h": `haloo`, 'jpegThumbnail': fs.readFileSync('./src/AlyaaXzy.jpg')}}
 	}
@@ -88,15 +88,15 @@ const fliveLoc = {
 	const fcona = {
 	 key:
 	 { fromMe: false,
-	 participant: `0@s.whatsapp.net`, ...(m.chat ? 
+	 participant: `6282311619167@s.whatsapp.net`, ...(m.chat ? 
 	 { remoteJid: "status@broadcast" } : {}) },
 	 message: { "contactsArrayMessage": { "title":"antibot","h": `aloo`, 'jpegThumbnail': fs.readFileSync('./src/AlyaaXzy.jpg')}}
 	}
-	const bugcon = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {}) }, message: { "contactMessage": { "vcard": ""}}}
+	const bugcon = { key: { fromMe: false, participant: `6282311619167@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {}) }, message: { "contactMessage": { "vcard": ""}}}
 //FAKEREPLY DOCUMENT
 const fdocs = {
 	key : {
-           participant : '0@s.whatsapp.net'
+           participant : '6282311619167@s.whatsapp.net'
                         },
        message: {
                     documentMessage: {
@@ -109,7 +109,7 @@ const fdocs = {
 const fvideo = {
 	 key: { 
           fromMe: false,
-	      participant: `0@s.whatsapp.net`, ...(m.chat ? 
+	      participant: `6282311619167@s.whatsapp.net`, ...(m.chat ? 
 	 { remoteJid: "0-1625305606@g.us" } : {}) 
                 },
 	 message: { 
@@ -126,8 +126,8 @@ const fvideo = {
 const fgclink = {
 	"key": {
 		"fromMe": false,
-		"participant": "0@s.whatsapp.net",
-		"remoteJid": "0@s.whatsapp.net"
+		"participant": "6282311619167@s.whatsapp.net",
+		"remoteJid": "6282311619167@s.whatsapp.net"
 	},
 	"message": {
 		"groupInviteMessage": {
@@ -143,7 +143,7 @@ const fgclink = {
 const fgif = {
 	 key: { 
           fromMe: false,
-	      participant: `0@s.whatsapp.net`, ...(m.chat ? 
+	      participant: `6282311619167@s.whatsapp.net`, ...(m.chat ? 
 	 { remoteJid: "0-1625305606@g.us" } : {}) 
                 },
 	 message: { 
@@ -161,7 +161,7 @@ const fgif = {
 const ftextt = {
 	 key: { 
           fromMe: false,
-	      participant: `0@s.whatsapp.net`, ...(m.chat ? 
+	      participant: `6282311619167@s.whatsapp.net`, ...(m.chat ? 
 	 { remoteJid: "0-1625305606@g.us" } : {}) 
                 },
 	 message: { 
@@ -176,7 +176,7 @@ const ftextt = {
 const fvn = {
 	 key: { 
           fromMe: false,
-	      participant: `0@s.whatsapp.net`, ...(m.chat ? 
+	      participant: `6282311619167@s.whatsapp.net`, ...(m.chat ? 
 	 { remoteJid: "0-1625305606@g.us" } : {}) 
                 },
 	 message: { 
