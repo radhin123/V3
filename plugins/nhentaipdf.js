@@ -1,4 +1,4 @@
-let fs = require('fs')
+let { get } = require('axios')
 let request = require('request')
 let fetch = require('node-fetch')
 let topdf = require('image-to-pdf')
@@ -68,9 +68,18 @@ let handler = async (m, { conn, args }) => {
 		}
 	}
 }
-
+handler.help = ['nhpdf'].map(v => v + ' <code>')
+handler.tags = ['hentai']
 handler.command = /^get?(nhentai|hentai|doujin|nh)$/i
+handler.limit = 1
 module.exports = handler
+
+async function getBuffer(url) {
+k = await require('node-fetch')(url)
+a = await k.buffer()
+return a 
+}
+
 /*let { get } = require('axios')
 let handler = async (m, { conn, args }) => {
 	if (!db.data.chats[m.chat].nsfw && m.isGroup) throw global.nsfw
