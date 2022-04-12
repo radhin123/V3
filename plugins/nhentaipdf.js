@@ -1,4 +1,4 @@
-let { get } = require('axios')
+/*let { get } = require('axios')
 let request = require('request')
 let fetch = require('node-fetch')
 let topdf = require('image-to-pdf')
@@ -78,9 +78,9 @@ async function getBuffer(url) {
 k = await require('node-fetch')(url)
 a = await k.buffer()
 return a 
-}
+}*/
 
-/*let { get } = require('axios')
+let { get } = require('axios')
 let handler = async (m, { conn, args }) => {
 	if (!db.data.chats[m.chat].nsfw && m.isGroup) throw global.nsfw
   if (!args[0]) throw 'Uhm...kode nya mana?'
@@ -100,4 +100,4 @@ async function getBuffer(url) {
 k = await require('node-fetch')(url)
 a = await k.buffer()
 return a 
-}*/
+}
